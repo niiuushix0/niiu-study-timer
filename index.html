@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Study Timer</h1>
+
+  <p class="quote">
+    "آدمی که هر روز 1% بهتر می‌شود،
+    بعد چند ماه دیگر آدم قبلی نیست."
+  </p>
+
+  <div class="glass">
+
+    <input type="number" id="minutes" placeholder="زمان مطالعه (دقیقه)">
+
+    <div class="timer" id="timer">
+      00:00
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="resume">Continue</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="task-section">
+      <h3>برنامه امروز</h3>
+
+      <input type="text" id="taskInput" placeholder="تسک جدید...">
+      <button id="addTask">اضافه</button>
+
+      <ul id="taskList"></ul>
+    
+
+    <div class="dashboard">
+      <h3>گزارش امروز</h3>
+      <p>زمان مطالعه: <span id="studyReport">0</span> دقیقه</p>
+
+      <input type="number" placeholder="تعداد تست امروز">
+    </div>
+
+  </div>
+
+  <footer>
+    Designed By <span>niusha babahydrian</span>
+  </footer>
+
+</div>
+
+<audio id="finishSound" src="sound/finish.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
